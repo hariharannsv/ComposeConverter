@@ -1,0 +1,8 @@
+services:
+  compose-converter:
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./app/uploads:/app/app/uploads
+      - ./app/generated:/app/app/generated
